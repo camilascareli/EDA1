@@ -65,16 +65,3 @@ int bfs(Elevator elevator) {
     return -1; // Não é possível chegar ao andar desejado
 }
 
-int main() {
-    Elevator elevator;
-    scanf("%d %d %d %d %d", &elevator.f, &elevator.s, &elevator.g, &elevator.u, &elevator.d);
-
-    int result = bfs(elevator);
-    if (result == -1) {
-        printf("use the stairs\n");
-    } else {
-        printf("%d\n", result);
-    }
-
-    return 0;
-}
